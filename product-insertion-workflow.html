@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Product insertion workflow · VYRO research</title>
+  <style>
+    :root { color-scheme:dark; --bg:#0f1115; --panel:#15181d; --line:#292f38; --ink:#f5f2ed; --muted:#aeb5bf; --accent:#e8d6b4; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:var(--ink); font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif; line-height:1.55; }
+    .top { height:68px; display:flex; align-items:center; justify-content:space-between; padding:0 clamp(20px,5vw,72px); border-bottom:1px solid #252a31; background:#111318; }
+    .brand { color:var(--ink); text-decoration:none; font-size:13px; letter-spacing:.16em; text-transform:uppercase; }
+    .top nav { display:flex; gap:5px; }
+    .top nav a { color:#8f98a4; text-decoration:none; padding:9px 12px; border-radius:7px; font-size:13px; }
+    .top nav a:hover,.top nav a.active { color:var(--ink); background:#1c2129; }
+    .wrap { max-width:1020px; margin:auto; padding:58px clamp(20px,5vw,72px) 72px; }
+    .eyebrow { color:#a89982; font-size:11px; letter-spacing:.16em; text-transform:uppercase; }
+    .hero h1 { max-width:780px; margin:12px 0 16px; font-size:clamp(38px,6vw,70px); font-weight:550; line-height:1.02; letter-spacing:-.05em; }
+    .hero p { max-width:720px; margin:0; color:var(--muted); font-size:18px; }
+    .section { margin-top:52px; }
+    .section > h2 { margin:0 0 14px; font-size:22px; font-weight:550; }
+    .section > p { max-width:740px; margin:0; color:var(--muted); }
+    .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-top:20px; }
+    .card,.step { border:1px solid var(--line); border-radius:12px; background:var(--panel); }
+    .card { padding:19px; }
+    .card strong { display:block; margin-bottom:7px; font-size:14px; }
+    .card p { margin:0; color:var(--muted); font-size:13px; }
+    .steps { display:grid; gap:10px; margin-top:20px; }
+    .step { display:grid; grid-template-columns:48px minmax(0,1fr); gap:15px; padding:18px; }
+    .number { display:grid; place-items:center; width:36px; height:36px; border-radius:50%; background:var(--accent); color:#171513; font-size:14px; font-weight:800; }
+    .step h3 { margin:1px 0 5px; font-size:15px; }
+    .step p { margin:0; color:var(--muted); font-size:14px; }
+    .callout { margin-top:20px; padding:15px 17px; border-left:3px solid #b39a73; border-radius:5px; background:#191917; color:#d5c7b1; }
+    .callout strong { color:var(--ink); }
+    .table-wrap { overflow-x:auto; margin-top:20px; border:1px solid var(--line); border-radius:12px; background:var(--panel); }
+    table { width:100%; min-width:610px; border-collapse:collapse; }
+    th,td { padding:14px 16px; border-bottom:1px solid var(--line); text-align:left; vertical-align:top; }
+    tr:last-child td { border-bottom:0; }
+    th { color:#8f98a4; font-size:11px; letter-spacing:.1em; text-transform:uppercase; }
+    td { color:var(--muted); font-size:13px; }
+    td:first-child { color:var(--ink); font-weight:650; }
+    .button { display:inline-block; margin-top:28px; padding:10px 14px; border:1px solid #4a515c; border-radius:8px; color:var(--ink); text-decoration:none; font-size:13px; }
+    .button:hover { border-color:var(--accent); color:var(--accent); }
+    @media (max-width:720px) { .grid { grid-template-columns:1fr; } .step { grid-template-columns:40px minmax(0,1fr); gap:10px; } }
+  </style>
+</head>
+<body>
+  <div class="site-content">
+    <header class="top">
+      <a class="brand" href="index.html">VYRO / research</a>
+      <nav><a href="gallery.html">Images</a><a class="active" href="index.html">Report</a></nav>
+    </header>
+    <main class="wrap">
+      <div class="hero">
+        <div class="eyebrow">Workflow guide · Aug 28, 2026</div>
+        <h1>How to build a believable product insertion</h1>
+        <p>A repeatable process for putting a real product into an existing social image without losing the authenticity of the original frame.</p>
+      </div>
+
+      <section class="section">
+        <h2>The working principle</h2>
+        <p>This is an insertion, not a new ad. Keep the existing photo—the location, framing, perspective, texture, and mood—and replace only the product. The result should feel like the item was already there when the image was taken.</p>
+        <div class="grid">
+          <article class="card"><strong>Use the real references</strong><p>Work from the original starter images and the actual product shots. Never recreate either from memory.</p></article>
+          <article class="card"><strong>Protect the scene</strong><p>Do not change the setting, camera angle, or composition just to make the product easier to show.</p></article>
+          <article class="card"><strong>Choose realism over polish</strong><p>A product that belongs in the photo is more useful than one that looks like a perfect catalog render.</p></article>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>The workflow</h2>
+        <div class="steps">
+          <article class="step"><div class="number">1</div><div><h3>Open both source sets</h3><p>Extract the starter-image ZIP and the product-photo ZIP before doing anything else. For a hat, study the real crown, brim, panels, fabric, embroidery, trim, stitching, and proportions from every useful angle.</p></div></article>
+          <article class="step"><div class="number">2</div><div><h3>Choose one starter frame</h3><p>Use one actual source photo as the base. Remove the old product and any caption or overlay text cleanly. Preserve everything else in the scene as closely as possible.</p></div></article>
+          <article class="step"><div class="number">3</div><div><h3>Match the product to the photograph</h3><p>Match its scale, viewing angle, light direction, color temperature, shadows, focus, depth of field, grain, and surface contact. It must obey gravity and sit naturally in the environment.</p></div></article>
+          <article class="step"><div class="number">4</div><div><h3>Generate and review five at a time</h3><p>Create five separate images from five unused sources. Keep their order fixed so a reviewer can simply approve, reject, or request a redo by number.</p></div></article>
+          <article class="step"><div class="number">5</div><div><h3>Log every version</h3><p>Maintain a manifest with the original filename, batch and slot, output path, status, reviewer decision, and notes. A redo becomes a new entry linked to the same starter frame—it does not erase the earlier version.</p></div></article>
+          <article class="step"><div class="number">6</div><div><h3>Export only the final approvals</h3><p>When review is complete, include one approved version per source image in a numbered folder. Add an export manifest, zip the folder, and verify the final image count before delivery.</p></div></article>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>What to track in the manifest</h2>
+        <p>The manifest is the guardrail that makes revisions and final delivery reliable.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Record</th><th>Why it matters</th><th>Example statuses</th></tr></thead>
+            <tbody>
+              <tr><td>Source image</td><td>Prevents duplicate use and lets every rework return to the exact original frame.</td><td>Unused / used</td></tr>
+              <tr><td>Generated version</td><td>Connects each output to its batch, review feedback, and replacement history.</td><td>Pending review / needs re-edit</td></tr>
+              <tr><td>Final decision</td><td>Keeps rejected and superseded images out of the delivery package.</td><td>Approved / rejected / eliminated</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Automatic rejects</h2>
+        <p>Discard any output that becomes a contact sheet, substitutes the wrong product, invents a different scene, leaves the source caption in place, or makes the product float, clip, or look pasted in. Do not count it toward the batch; return to the real source files and try again.</p>
+        <p class="callout"><strong>The test for a successful image:</strong> the product is recognizable, but the photograph still feels candid, imperfect, and untouched everywhere else.</p>
+      </section>
+
+      <a class="button" href="index.html">Back to research</a>
+    </main>
+  </div>
+  <script>
+    (function () {
+      const HASH = '4ea93dfb214b46a920764f96b946e50813d3a3fdf7560e279f46e89a85351fd6';
+      const css = document.createElement('style');
+      css.textContent = '.locked .site-content{display:none}.gate{position:fixed;inset:0;z-index:20;display:grid;place-items:center;background:#0f1115;color:#f6f3ee;font:15px system-ui}.gate-card{width:min(380px,calc(100% - 40px));padding:32px;background:#171a20;border:1px solid #343a43;border-radius:16px;box-shadow:0 24px 80px #0008}.gate h1{font:600 21px system-ui;margin:0 0 7px}.gate p{color:#aeb5bf;margin:0 0 22px}.gate input{width:100%;padding:12px 13px;border-radius:8px;border:1px solid #4a515c;background:#0f1115;color:#fff;font-size:15px}.gate button{margin-top:12px;width:100%;padding:12px;border:0;border-radius:8px;background:#e8d6b4;color:#171513;font-weight:600;cursor:pointer}.gate .err{height:18px;margin-top:10px;color:#e08e82;font-size:12px}';
+      document.head.appendChild(css);
+      const hash = (value) => crypto.subtle.digest('SHA-256', new TextEncoder().encode(value)).then((digest) => Array.from(new Uint8Array(digest)).map((byte) => byte.toString(16).padStart(2, '0')).join(''));
+      const reveal = () => { document.documentElement.classList.remove('locked'); document.querySelector('.gate')?.remove(); };
+      const boot = () => {
+        if (localStorage.getItem('vyro_access') === '1') { reveal(); return; }
+        document.documentElement.classList.add('locked');
+        const gate = document.createElement('div');
+        gate.className = 'gate';
+        gate.innerHTML = '<div class="gate-card"><h1>Private research workspace</h1><p>Enter the password once to unlock reports and tutorials.</p><input type="password" autocomplete="current-password" placeholder="Password"><button>Unlock</button><div class="err"></div></div>';
+        document.body.appendChild(gate);
+        const input = gate.querySelector('input'), button = gate.querySelector('button'), error = gate.querySelector('.err');
+        const submit = () => hash(input.value).then((value) => { if (value === HASH) { localStorage.setItem('vyro_access', '1'); reveal(); } else { error.textContent = 'That password is not correct.'; input.select(); } });
+        button.onclick = submit;
+        input.onkeydown = (event) => { if (event.key === 'Enter') submit(); };
+      };
+      if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot); else boot();
+    })();
+  </script>
+</body>
+</html>
