@@ -53,51 +53,21 @@
     <main class="wrap">
       <div class="hero">
         <div class="eyebrow">Workflow guide · Aug 28, 2026</div>
-        <h1>How to build a believable product insertion</h1>
-        <p>A repeatable process for putting a real product into an existing social image without losing the authenticity of the original frame.</p>
+        <h1>Product insertion workflow</h1>
+        <p>A simple way to run a product-insertion project in ChatGPT without losing track of the source images, approvals, or final exports.</p>
       </div>
-
-      <section class="section">
-        <h2>The working principle</h2>
-        <p>This is an insertion, not a new ad. Keep the existing photo—the location, framing, perspective, texture, and mood—and replace only the product. The result should feel like the item was already there when the image was taken.</p>
-        <div class="grid">
-          <article class="card"><strong>Use the real references</strong><p>Work from the original starter images and the actual product shots. Never recreate either from memory.</p></article>
-          <article class="card"><strong>Protect the scene</strong><p>Do not change the setting, camera angle, or composition just to make the product easier to show.</p></article>
-          <article class="card"><strong>Choose realism over polish</strong><p>A product that belongs in the photo is more useful than one that looks like a perfect catalog render.</p></article>
-        </div>
-      </section>
 
       <section class="section">
         <h2>The workflow</h2>
         <div class="steps">
-          <article class="step"><div class="number">1</div><div><h3>Open both source sets</h3><p>Extract the starter-image ZIP and the product-photo ZIP before doing anything else. For a hat, study the real crown, brim, panels, fabric, embroidery, trim, stitching, and proportions from every useful angle.</p></div></article>
-          <article class="step"><div class="number">2</div><div><h3>Choose one starter frame</h3><p>Use one actual source photo as the base. Remove the old product and any caption or overlay text cleanly. Preserve everything else in the scene as closely as possible.</p></div></article>
-          <article class="step"><div class="number">3</div><div><h3>Match the product to the photograph</h3><p>Match its scale, viewing angle, light direction, color temperature, shadows, focus, depth of field, grain, and surface contact. It must obey gravity and sit naturally in the environment.</p></div></article>
-          <article class="step"><div class="number">4</div><div><h3>Generate and review five at a time</h3><p>Create five separate images from five unused sources. Keep their order fixed so a reviewer can simply approve, reject, or request a redo by number.</p></div></article>
-          <article class="step"><div class="number">5</div><div><h3>Log every version</h3><p>Maintain a manifest with the original filename, batch and slot, output path, status, reviewer decision, and notes. A redo becomes a new entry linked to the same starter frame—it does not erase the earlier version.</p></div></article>
-          <article class="step"><div class="number">6</div><div><h3>Export only the final approvals</h3><p>When review is complete, include one approved version per source image in a numbered folder. Add an export manifest, zip the folder, and verify the final image count before delivery.</p></div></article>
+          <article class="step"><div class="number">1</div><div><h3>Upload both ZIPs to ChatGPT</h3><p>Upload the starter-image ZIP and the product ZIP in the same chat. Then tell ChatGPT which ZIP contains the starting frames and which one contains the product references.</p></div></article>
+          <article class="step"><div class="number">2</div><div><h3>Make it confirm it can access the ZIPs</h3><p>Before generating anything, explicitly ask ChatGPT to confirm that it can open both ZIPs and use the files inside them. Do this again before every new batch. This matters because generations can drift or glitch when the files are no longer available to the chat.</p></div></article>
+          <article class="step"><div class="number">3</div><div><h3>Generate five at a time</h3><p>Tell ChatGPT to use five unused starting frames from the starter ZIP and make five separate product insertions. Review the batch in its displayed order.</p></div></article>
+          <article class="step"><div class="number">4</div><div><h3>Approve, reject, or redo by number</h3><p>Reply with simple decisions such as “keep 1, 3, and 5,” “redo 2,” or “eliminate 4.” Ask ChatGPT to lock in each decision and keep track of the source image and latest approved version before moving to the next five.</p></div></article>
+          <article class="step"><div class="number">5</div><div><h3>Repeat until every starting frame is reviewed</h3><p>Continue in batches of five. Each time, have ChatGPT confirm ZIP access and pull the next unused images from the starter folder.</p></div></article>
+          <article class="step"><div class="number">6</div><div><h3>Export the approved images</h3><p>When all decisions are final, ask ChatGPT to export only the approved images, use one final version per source frame, and include a ZIP plus an export manifest.</p></div></article>
         </div>
-      </section>
-
-      <section class="section">
-        <h2>What to track in the manifest</h2>
-        <p>The manifest is the guardrail that makes revisions and final delivery reliable.</p>
-        <div class="table-wrap">
-          <table>
-            <thead><tr><th>Record</th><th>Why it matters</th><th>Example statuses</th></tr></thead>
-            <tbody>
-              <tr><td>Source image</td><td>Prevents duplicate use and lets every rework return to the exact original frame.</td><td>Unused / used</td></tr>
-              <tr><td>Generated version</td><td>Connects each output to its batch, review feedback, and replacement history.</td><td>Pending review / needs re-edit</td></tr>
-              <tr><td>Final decision</td><td>Keeps rejected and superseded images out of the delivery package.</td><td>Approved / rejected / eliminated</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <section class="section">
-        <h2>Automatic rejects</h2>
-        <p>Discard any output that becomes a contact sheet, substitutes the wrong product, invents a different scene, leaves the source caption in place, or makes the product float, clip, or look pasted in. Do not count it toward the batch; return to the real source files and try again.</p>
-        <p class="callout"><strong>The test for a successful image:</strong> the product is recognizable, but the photograph still feels candid, imperfect, and untouched everywhere else.</p>
+        <p class="callout"><strong>The important habit:</strong> before every batch, ask ChatGPT to confirm it still has access to both ZIPs. It should work from those files, not from memory or a previous generation.</p>
       </section>
 
       <a class="button" href="index.html">Back to research</a>
