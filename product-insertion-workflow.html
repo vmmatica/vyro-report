@@ -54,18 +54,19 @@
       <div class="hero">
         <div class="eyebrow">Workflow guide · Aug 28, 2026</div>
         <h1>Product insertion workflow</h1>
-        <p>A simple way to run a product-insertion project in ChatGPT without losing track of the source images, approvals, or final exports.</p>
+        <p>A simple way to go from a TikTok account to selected starter images, product insertions, approvals, and a final export.</p>
       </div>
 
       <section class="section">
         <h2>The workflow</h2>
         <div class="steps">
-          <article class="step"><div class="number">1</div><div><h3>Upload both ZIPs to ChatGPT</h3><p>Upload the starter-image ZIP and the product ZIP in the same chat. Then tell ChatGPT which ZIP contains the starting frames and which one contains the product references.</p></div></article>
-          <article class="step"><div class="number">2</div><div><h3>Make it confirm it can access the ZIPs</h3><p>Before generating anything, explicitly ask ChatGPT to confirm that it can open both ZIPs and use the files inside them. Do this again before every new batch. This matters because generations can drift or glitch when the files are no longer available to the chat.</p></div></article>
-          <article class="step"><div class="number">3</div><div><h3>Generate five at a time</h3><p>Tell ChatGPT to use five unused starting frames from the starter ZIP and make five separate product insertions. Review the batch in its displayed order.</p></div></article>
-          <article class="step"><div class="number">4</div><div><h3>Approve, reject, or redo by number</h3><p>Reply with simple decisions such as “keep 1, 3, and 5,” “redo 2,” or “eliminate 4.” Ask ChatGPT to lock in each decision and keep track of the source image and latest approved version before moving to the next five.</p></div></article>
-          <article class="step"><div class="number">5</div><div><h3>Repeat until every starting frame is reviewed</h3><p>Continue in batches of five. Each time, have ChatGPT confirm ZIP access and pull the next unused images from the starter folder.</p></div></article>
-          <article class="step"><div class="number">6</div><div><h3>Export the approved images</h3><p>When all decisions are final, ask ChatGPT to export only the approved images, use one final version per source frame, and include a ZIP plus an export manifest.</p></div></article>
+          <article class="step"><div class="number">1</div><div><h3>Turn the TikTok account into a starter-image gallery</h3><p>Paste the TikTok account link into Codex and ask it to go through the channel, pull useful thumbnails or screenshots, and put them in a gallery for you to click through. Choose the images you want to keep, then have Codex package those selections into a starter-image ZIP.</p></div></article>
+          <article class="step"><div class="number">2</div><div><h3>Upload both ZIPs to ChatGPT</h3><p>Upload the starter-image ZIP and the product ZIP in the same chat. Then tell ChatGPT which ZIP contains the starting frames and which one contains the product references.</p></div></article>
+          <article class="step"><div class="number">3</div><div><h3>Make it confirm it can access the ZIPs</h3><p>Before generating anything, explicitly ask ChatGPT to confirm that it can open both ZIPs and use the files inside them. Do this again before every new batch. This matters because generations can drift or glitch when the files are no longer available to the chat.</p></div></article>
+          <article class="step"><div class="number">4</div><div><h3>Generate five at a time</h3><p>Tell ChatGPT to use five unused starting frames from the starter ZIP and make five separate product insertions. Review the batch in its displayed order.</p></div></article>
+          <article class="step"><div class="number">5</div><div><h3>Approve, reject, or redo by number</h3><p>Reply with simple decisions such as “keep 1, 3, and 5,” “redo 2,” or “eliminate 4.” Ask ChatGPT to lock in each decision and keep track of the source image and latest approved version before moving to the next five.</p></div></article>
+          <article class="step"><div class="number">6</div><div><h3>Repeat until every starting frame is reviewed</h3><p>Continue in batches of five. Each time, have ChatGPT confirm ZIP access and pull the next unused images from the starter folder.</p></div></article>
+          <article class="step"><div class="number">7</div><div><h3>Export the approved images</h3><p>When all decisions are final, ask ChatGPT to export only the approved images, use one final version per source frame, and include a ZIP plus an export manifest.</p></div></article>
         </div>
         <p class="callout"><strong>The important habit:</strong> before every batch, ask ChatGPT to confirm it still has access to both ZIPs. It should work from those files, not from memory or a previous generation.</p>
       </section>
